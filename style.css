@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    transition: 800ms;
 }
 nav{
     display: flex;
@@ -99,7 +100,7 @@ nav .items{
     padding: 80px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-image: url(./assets/background-1.webp);
     background-position: center;
@@ -220,7 +221,191 @@ nav .items{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    width: 1220px;
+}
+.third-section-all{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.third-section{
+    background-color: #131212;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+}
+.third-section-head{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-bottom: 40px;
+}
+.news-update{
+    display: flex;
+    color: white;
+}
+.news-update-list{
+    display: flex;
+}
+.news-update-list ul{
+    /* width: 400px; */
+    display: flex;
+    justify-content: space-between;
+}
+.news-update-list li{
+    width: fit-content;
+    list-style-type: none;
+}
+.news-update-list a{
+    color: white;
+    opacity: 60%;
+    text-decoration: none;
+}
+.news-update-list a:hover{
+    color: #9e0303;
+    font-weight: bold;
+}
+.side-bar-head{
+    display: flex;
+    color: white;
+    margin-bottom: 40px;
+}
+.news{
+    background-image: url(./assets/news-1.jpg.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    padding: 0 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.news a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.news p:first-child{
+    border: 1px solid #a81d1d;
+    background-color: #a81d1d;
+    width: fit-content;
+    opacity: 80%;
+    transform: skew(-20deg);
+    margin-bottom: 10px;
+}
+.news p:not(:first-child){
+    transform: skew(-20deg);
+    color: white;
+    opacity: 60%;
+}
+.news span{
+    color: #c20000;
+    font-weight: bold;
+}
+.news-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+.reviews-1{
+    background-image: url(./assets/news-card-1.webp);
+    background-repeat: no-repeat;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.reviews-1 p{
+    background-color: #9e0303;
+    color: white;
+    transform: skew(-20deg);
+    width: fit-content;
+    opacity: 70%;
+}
+.news-card-1 a{
+    color: white;
+    text-decoration: none;
+}
+.news-card-2 a{
+    color: white;
+    text-decoration: none;
+}
+.news-card-3 a{
+    color: white;
+    text-decoration: none;
+}
+.reviews-2{
+    background-image: url(./assets/news-card-2.webp);
+    background-repeat: no-repeat;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.reviews-2 p{
+    background-color: #9e0303;
+    color: white;
+    transform: skew(-20deg);
+    width: fit-content;
+    opacity: 70%;
+}
+.reviews-3{
+    background-image: url(./assets/news-card-3.webp);
+    background-repeat: no-repeat;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.reviews-3 p{
+    background-color: #9e0303;
+    color: white;
+    transform: skew(-20deg);
+    width: fit-content;
+    opacity: 70%;
+}
+.news-cards p{
+    margin-top: 10px;
+    color: white;
+    opacity: 60%;
+    transform: skew(-20deg);
+}
+.facebook, .twitter, .youtube, .instagram{
+    display: flex;
+    width: 350px;
+    border: 1px solid #222222;
+    margin-bottom: 20px;
+    color: white;
+    transform: skew(-20deg);
+}
+.facebook:hover, .twitter:hover, .youtube:hover, .instagram:hover{
+    border-color: #40c4ff;
+    cursor: pointer;
+}
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram{
+    margin-right: 20px;
+    background-color: #222222;
+    padding: 15px;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-youtube:hover, .fa-instagram:hover{
+    background-color: #40c4ff;
+}
+.facebook div, .twitter div, .youtube div, .instagram div{
+    display: flex;
+}
+.facebook-text, .twitter-text, .youtube-text, .instagram-text{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
 }
 @media (max-width:700px){
     .social-medias{
@@ -239,8 +424,60 @@ nav .items{
         align-items: center;
     }
 }
+@media (max-width: 900px){
+    .first-section-all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 600px){
+    .first-section-all{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-section{
+        padding: 200px 50px;
+    }
+    .trending-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trending-card{
+        margin-top: 30px;
+    }
+}
 @media screen and (min-width:700px) and (max-width: 1200px){
     .menu-main{
         display: none;
+    }
+}
+@media (max-width:1400px){
+    body{
+        width: 100%;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cards div{
+        margin-top: 30px;
+    }
+    .first-section-all{
+        width: 100%;
+        height: 500%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .first-section{
+        padding: 150px 0;
     }
 }
