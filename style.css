@@ -571,6 +571,23 @@ nav .items {
 }
 
 @media (max-width: 600px) {
+    header{
+        width: 86em;
+    }
+    .menu-main{
+        display: none;
+    }
+    .social-medias{
+        display: none;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        width: 100em;
+    }
+    .sun-clock{
+        display: flex;
+    }
     .first-section-all {
         width: 100vw;
         display: flex;
@@ -581,6 +598,7 @@ nav .items {
 
     .first-section {
         padding: 200px 50px;
+        width: 80em;
     }
 
     .trending-cards {
@@ -593,11 +611,34 @@ nav .items {
     .trending-card {
         margin-top: 30px;
     }
+    .third-section{
+        width: 68em;
+    }
+    .second-section{
+        width: 68em;
+    }
+    .third-section-all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40em;
+    }
+    .cards div{
+        margin-top: 20px;
+    }
+    .side-bar{
+        margin-top: 50px;
+    }
 }
 
-@media (min-width:600px) and (max-width: 1600px) {
+@media (min-width:600px) and (max-width: 1400px) {
     header {
-        width: 127vw;
+        width: 119em;
     }
 
     .sun-clock {
@@ -630,13 +671,13 @@ nav .items {
     }
 
     .first-section {
-        width: 127%;
+        width: 119em;
         display: flex;
         justify-content: space-between;
     }
 
     .second-section {
-        width: 100vw;
+        width: 100em;
     }
     
     .third-section-all {
@@ -647,7 +688,7 @@ nav .items {
     }
 
     .third-section {
-        width: 100vw;
+        width: 100em;
     }
 
     .cards {
